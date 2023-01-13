@@ -22,7 +22,7 @@ struct ContentView: View {
     
     var body: some View {
 
-        let message = "Today I have managed to make a great Extension that has %d methods".localizedWithArguments(number)
+        let message = "Message".localizedWithArguments(number)
 
         VStack {
             Text(message)
@@ -34,14 +34,10 @@ struct ContentView: View {
     }
 }
 
-
-
-
-
-
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+//
+//
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentView()
+//    }
+//}
