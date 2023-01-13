@@ -18,7 +18,8 @@ let name = "Ahmed"
 let message = "Message".localizedWithArguments(name)
 print(message) // prints: Hello Ahmed
 
- 
+```
+
 extension String {
     // .localized() 
       func localized() -> String {
@@ -29,4 +30,5 @@ extension String {
   }
 }
 
+```
 This is the core concept. Might explain other parts in comments inside the project in the future.
