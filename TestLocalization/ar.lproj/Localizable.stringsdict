@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>I have %d Books.</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@bookCount@ </string>
+		<key>bookCount</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>لا كتب لدي.</string>
+			<key>one</key>
+			<string>لدي كتاب واحد.</string>
+			<key>two</key>
+			<string>لدي كتابان.</string>
+			<key>few</key>
+			<string>لدي %d كتب.</string>
+			<key>many</key>
+			<string>لدي %d كتابًا.</string>
+			<key>other</key>
+			<string>لدي %d كتابًا.</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
