@@ -7,9 +7,8 @@
 
 import Foundation
 
-// To localize strings with/without arguments
 extension String {
-    
+    // To localize strings with/without arguments
     func localized() -> String {
         NSLocalizedString(self, tableName: "Localizable", comment: "")
   }
@@ -21,9 +20,8 @@ extension String {
 }
 
 
-// To get numbers localized, e.g. ENG 9 -> Ar ٩
 extension String {
-    
+    // To get numbers localized, e.g. ENG 9 -> Ar ٩
     private static let formatter = NumberFormatter()
 
     func clippingCharacters(in characterSet: CharacterSet) -> String {
@@ -33,7 +31,6 @@ extension String {
     func convertedDigitsToLocale(_ locale: Locale = .current) -> String {
         let digits = Set(clippingCharacters(in: CharacterSet.decimalDigits.inverted))
         guard !digits.isEmpty else { return self }
-
         Self.formatter.locale = locale
 
         let maps: [(original: String, converted: String)] = digits.map {

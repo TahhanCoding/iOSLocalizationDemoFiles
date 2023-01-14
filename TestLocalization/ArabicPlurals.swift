@@ -9,31 +9,21 @@ import SwiftUI
 
 struct ArabicPlurals: View {
     
-//    //MARK: Properties
+//    MARK: Properties
+      let bookCount = 11
 //    let SuraName = "Al-Fatiha"
 //    let dataToReview = "Today"
-//
-//
+//    get current language key to use if needed
+//    let key = Bundle.main.preferredLocalizations.first
+
 //    var body: some View {
 //        let SuraAyahsCount = 2
 //        let message = "myMessage".localizedWithArguments(SuraName, SuraAyahsCount, dataToReview )
 //        Text(message)
-//
 //    }
     
-    
-
-    //MARK: Properties
-    let bookCount = 11
-    
-//    // get current language key to use if needed
-//        let key = Bundle.main.preferredLocalizations.first
-
-
     var body: some View {
-
         let message = "I have %d Books." .localizedWithArguments(bookCount)
-
         Text(message)
     }
 }
